@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<style>
+			body { margin: 0; }
+
+            button{
+                background-color: skyblue; 
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                position: relative;
+                
+                 
+            }
+		</style>
+        
+        <script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+          "three": "/build/three.module.min.js",
+          "three/addons/": "./jsm/",
+          "dat.gui": "/dat.gui"
+
+        }
+			}
+		</script>
+	</head>
+	<body>
+        <div id="container"></div>
+		<script type="module" src="/car.js"></script>
+
+ <!--     <button id="startButtonId">Start</button>
+        <button id="resetButtonId">End</button> 
+
+    --> 
+	</body>
+</html>
